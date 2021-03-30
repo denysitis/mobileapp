@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CooKing</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div>
+			<div class="menu">
+				<a href="#" class="menu_btn">
+					<span></span>
+				</a>
+				<div class="menu-list">
+					<ul>
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="all-food.html">Всі страви</a></li>
+						<li><a href="all-product.html">Всі продукти</a></li>
+						<li><a href="#">Улюблене</a></li>
+					</ul>
+				</div>			
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="title_for_product_all">
+			<p>
+				Всі продукти
+			</p>
+		</div>
+		<div class="product_lits_all">
+			<div class="vegetables_all" tabindex="1">
+				<img src="img/capusta.png" data-id="" alt="vegetables">
+			</div>
+			<div class="vegetables_all" tabindex="1">
+				<img src="img/cartoshca.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all" tabindex="1">
+				<img src="img/morkovka.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/brocolli.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/perec.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/bobu.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/cabachok.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/goroh.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all" tabindex="1">
+				<img src="img/grub.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/ogirok.png" alt="vegetables">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/ananas.png" alt="fruits">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/grusha.png" alt="fruits">
+			</div>
+			<div class="vegetables_all">
+				<img src="img/klubnika.png" alt="fruits">
+			</div>
+		</div>		
+	</section>
+	<script type="text/javascript">
+		document.querySelectorAll('.vegetables_all').addEventListener('click', () => {
+		  document.querySelectorAll('.vegetables_all').classList.toggle('focus_item');
+		});
+</script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
