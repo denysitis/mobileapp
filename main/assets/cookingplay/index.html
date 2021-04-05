@@ -11,6 +11,19 @@
 </head>
 <body>
 	<header>
+		<div class="preloader" id="preloader">
+			<div class="pan-loader">
+			  <div class="loader"></div>
+				  <div class="pan-container">
+				    <div class="pan"></div>
+				    <div class="handle"></div>
+				  </div>
+			  <div class="shadow"></div>
+			  	<p>
+					Cooking loading...
+				</p>
+			</div>
+		</div>
 		<div>
 			<div class="menu">
 				<a href="#" class="menu_btn">
@@ -35,8 +48,19 @@
 			</p>
 		</div>
 		<div class="search_main">
-			<a style="height: 46px;" href="#"><img src="files/search-solid.svg" alt="search"></a>
-			<input type="text" class="serch_input" placeholder="Знайти страву">
+			<a style="height: 46px;" type="submit" href="#"><img src="files/search-solid.svg" alt="search"></a>
+			<input type="text" onkeyup="myFunctionSearch()" id="serch-input" class="serch_input" placeholder="Знайти страву">
+		</div>
+		<div class="search_div">
+			<ul class="search_ul_class" id="search-ul">
+				<li><a href="soup-cheese.html">Сирний суп</a></li>
+				<li><a href="#">Борщ</a></li>
+				<li><a href="#">Рагу</a></li>
+				<li><a href="#">Млинці</a></li>
+				<li><a href="#">Суші</a></li>
+				<li><a href="#">Сирники</a></li>
+				<li><a href="#">Макарони</a></li>
+			</ul>
 		</div>
 	</header>
 	<section class="main_section">
@@ -80,16 +104,16 @@
 					Сирний суп
 				</p>
 				<p>
-					Час приготування:<br>30хв
+					Час приготування:<br>40хв
 				</p>
-				<a href="#">
+				<a href="soup-cheese.html">
 					Детальніше
 				</a>				
 			</div>
 			<div class="food_one">
-				<img src="img/cheese-cream-soup-with-bacon.png" alt="food">
+				<img src="img/Borsch.png" alt="food">
 				<p>
-					Сирний суп
+					Борщ
 				</p>
 				<p>
 					Час приготування: 30хв
@@ -99,9 +123,9 @@
 				</a>				
 			</div>
 			<div class="food_one">
-				<img src="img/cheese-cream-soup-with-bacon.png" alt="food">
+				<img src="img/mlunci.png" alt="food">
 				<p>
-					Сирний суп
+					Млинці
 				</p>
 				<p>
 					Час приготування: 30хв
@@ -111,9 +135,9 @@
 				</a>				
 			</div>
 			<div class="food_one">
-				<img src="img/cheese-cream-soup-with-bacon.png" alt="food">
+				<img src="img/surnuku.png" alt="food">
 				<p>
-					Сирний суп
+					Сирники
 				</p>
 				<p>
 					Час приготування: 30хв
@@ -125,5 +149,16 @@
 		</div>
 	</section>
 	<script src="js/main.js"></script>
+	<script src="js/search-filter.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/JavaScript"> 
+
+		$('.search_ul_class').each(function() {
+		  $(this).find('li').slice(3).hide()
+		});
+		// document.querySelectorAll('.search_ul_class').forEach(function() {
+
+		// });
+	</script>
 </body>
 </html>
